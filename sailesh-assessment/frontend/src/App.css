@@ -1,0 +1,82 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+.App {
+  text-align: center;
+}
+
+.App-logo {
+  height: 40vmin;
+  pointer-events: none;
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  .App-logo {
+    animation: App-logo-spin infinite 20s linear;
+  }
+}
+
+.App-header {
+  background-color: #282c34;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: calc(10px + 2vmin);
+  color: white;
+}
+
+.App-link {
+  color: #61dafb;
+}
+
+.form-container {
+  margin: 5% 3%;
+  background: #fafafa;
+  min-height: 200px;
+  min-width: 200px;
+  display: flex;
+  width: 100%;
+}
+
+.sidebar-container {
+  width: 20rem;
+}
+
+.hamburger-icon {
+  width: 40px;
+  height: 40px;
+  cursor: pointer;
+}
+
+.page-container {
+  margin-top: 30px;
+}
+
+@media (max-width: 768px) {
+  .sidebar-container {
+    width: 100vw;
+  }
+  .form-container {
+    left: 10%;
+    right: 10%;
+  }
+  .hamburger-icon {
+    width: 20px;
+    height: 20px;
+  }
+  .page-container {
+    margin-top: 20px;
+  }
+}
+
+@keyframes App-logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
